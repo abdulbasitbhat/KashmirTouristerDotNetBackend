@@ -1,0 +1,102 @@
+[
+  {
+    "ContainingType": "KashmiriTourister.Controllers.LandmarksController",
+    "Method": "AddLandmark",
+    "RelativePath": "api/Landmarks/addLandmark",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addLandmarkDTO",
+        "Type": "KashmiriTourister.Models.AddLandmarkDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KashmiriTourister.Controllers.LandmarksController",
+    "Method": "GetAllLandmarks",
+    "RelativePath": "api/Landmarks/allLandmarks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KashmiriTourister.Controllers.LandmarksController",
+    "Method": "DeleteLandmark",
+    "RelativePath": "api/Landmarks/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KashmiriTourister.Controllers.LandmarksController",
+    "Method": "GetLandmarkById",
+    "RelativePath": "api/Landmarks/id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KashmiriTourister.Controllers.LandmarksController",
+    "Method": "UpdateLandmark",
+    "RelativePath": "api/Landmarks/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateLandmarkDTO",
+        "Type": "KashmiriTourister.Models.UpdateLandmarkDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KashmiriTourister.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[KashmiriTourister.WeatherForecast, KashmiriTourister, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
