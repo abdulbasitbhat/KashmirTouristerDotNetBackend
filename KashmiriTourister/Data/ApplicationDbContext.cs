@@ -13,5 +13,7 @@ namespace KashmiriTourister.Data
         public DbSet<Landmarks> Landmarkss { get; set; }
 
         public DbSet<Blogs> Blogs { get; set; }
+
+        public DbSet<CertificateRequest> CertificateRequest { get; set; } 
     }
 }

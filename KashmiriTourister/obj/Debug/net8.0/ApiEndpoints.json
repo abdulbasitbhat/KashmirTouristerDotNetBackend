@@ -79,6 +79,53 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "KashmiriTourister.Controllers.CertificateRequestController",
+    "Method": "AddRequest",
+    "RelativePath": "api/certify/CertificateRequest/addRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KashmiriTourister.Models.AddCertifateRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KashmiriTourister.Controllers.CertificateRequestController",
+    "Method": "allRequests",
+    "RelativePath": "api/certify/CertificateRequest/allRequests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KashmiriTourister.Controllers.CertificateRequestController",
+    "Method": "updateBlog",
+    "RelativePath": "api/certify/CertificateRequest/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "KashmiriTourister.Models.UpdateCertificateRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KashmiriTourister.Controllers.LandmarksController",
     "Method": "AddLandmark",
     "RelativePath": "api/Landmarks/addLandmark",
