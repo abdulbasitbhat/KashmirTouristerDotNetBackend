@@ -46,7 +46,7 @@ namespace KashmiriTourister.Controllers
 
         [HttpPut]
         [Route("update/{id:guid}")]
-        public IActionResult updateBlog(Guid id, UpdateCertificateRequestDTO request )
+        public IActionResult updateRequest(Guid id, UpdateCertificateRequestDTO request )
         {
             var req = dbContext.CertificateRequest.Find(id);
             if (req is null)
@@ -62,6 +62,32 @@ namespace KashmiriTourister.Controllers
             dbContext.SaveChanges();
             return Ok(req);
 
+        }
+
+        [HttpPut]
+        [Route("id/{id:guid}")]
+        public IActionResult getRequestById(Guid id, UpdateCertificateRequestDTO request)
+        {
+            var req = dbContext.CertificateRequest.Find(id);
+            if (req is null)
+            {
+                return NotFound();
+            }
+            return Ok(req);
+        }
+
+        [HttpDelete]
+        [Route("delete/{id:guid}")]
+        public IActionResult delRequest(Guid id)
+        {
+            var req = dbContext.CertificateRequest.Find(id);
+            if (req is null)
+            {
+                return NotFound();
+            }
+            dbContext.CertificateRequest.Remove(req);
+            dbContext.SaveChanges();
+            return Ok(req);
         }
 
     }
