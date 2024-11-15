@@ -70,9 +70,13 @@ namespace KashmiriTourister.Controllers
             {
                 user.name = updateLoginDTO.name;
             }
-            if (updateLoginDTO.collection.Length != 0)
+            if (updateLoginDTO.collection.Length != 0 && updateLoginDTO.collection[0] != "empty")
             {
                 user.collection = updateLoginDTO.collection;
+            }
+            if (updateLoginDTO.collection.Length != 0 && updateLoginDTO.collection[0] == "empty")
+            {
+                user.collection = [];
             }
 
             dbContext.SaveChanges();

@@ -27,6 +27,7 @@ namespace KashmiriTourister.Controllers
             {
                 email = request.email,
                 landmark = request.landmark,
+                landmarkId = request.landmarkId,
                 image = request.image,
                 hallOfTravellers = request.hallOfTravellers,
                 issueStatus = request.issueStatus
@@ -62,6 +63,11 @@ namespace KashmiriTourister.Controllers
             if (request.landmark != "")
             {
                 req.landmark = request.landmark;
+            }
+
+            if (request.landmarkId != "")
+            {
+                req.landmarkId = request.landmarkId;
             }
 
             if (request.image != "")

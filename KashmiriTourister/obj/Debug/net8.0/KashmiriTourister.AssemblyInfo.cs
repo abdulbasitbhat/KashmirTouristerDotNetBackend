@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KashmiriTourister")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e1f3bc7635cc549c8bdde0cefa41512a40640ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2f3d1b1390e9396bf7a6d20531aa8d8f1120e63")]
 [assembly: System.Reflection.AssemblyProductAttribute("KashmiriTourister")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KashmiriTourister")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

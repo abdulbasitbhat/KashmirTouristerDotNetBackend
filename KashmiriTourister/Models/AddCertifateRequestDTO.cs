@@ -5,6 +5,7 @@
         public string email { get; set; }
 
         public string landmark { get; set; }
+        public string landmarkId { get; set; }
 
         public string image { get; set; }
 

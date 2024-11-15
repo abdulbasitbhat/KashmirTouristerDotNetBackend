@@ -7,6 +7,8 @@
 
         public string landmark { get; set; }
 
+        public string landmarkId { get; set; }
+
         public string image { get; set; }
 
         public bool hallOfTravellers { get; set; }
