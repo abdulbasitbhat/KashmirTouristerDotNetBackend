@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "KashmiriTourister.Controllers.LoginController",
+    "Method": "alllogin",
+    "RelativePath": "api/alllogin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KashmiriTourister.Controllers.BlogsController",
     "Method": "AddBlog",
     "RelativePath": "api/Blogs/addBlog",
@@ -105,6 +115,64 @@
       {
         "Name": "addCertificateDTO",
         "Type": "KashmiriTourister.Models.AddCertificateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KashmiriTourister.Controllers.CertificateCollectedController",
+    "Method": "AddCert",
+    "RelativePath": "api/certificateCollected/addCert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KashmiriTourister.Models.AddCertificateCollectedDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KashmiriTourister.Controllers.CertificateCollectedController",
+    "Method": "allCert",
+    "RelativePath": "api/certificateCollected/allCertificates",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KashmiriTourister.Controllers.CertificateCollectedController",
+    "Method": "delCert",
+    "RelativePath": "api/certificateCollected/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KashmiriTourister.Controllers.CertificateCollectedController",
+    "Method": "getCertificate",
+    "RelativePath": "api/certificateCollected/id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -268,6 +336,54 @@
       {
         "Name": "updateLandmarkDTO",
         "Type": "KashmiriTourister.Models.UpdateLandmarkDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KashmiriTourister.Controllers.LoginController",
+    "Method": "login",
+    "RelativePath": "api/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addLoginDTO",
+        "Type": "KashmiriTourister.Models.AddLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KashmiriTourister.Controllers.LoginController",
+    "Method": "loginDetails",
+    "RelativePath": "api/loginDetails/id/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KashmiriTourister.Controllers.LoginController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/updateUser",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateLoginDTO",
+        "Type": "KashmiriTourister.Models.UpdateLoginDTO",
         "IsRequired": true
       }
     ],

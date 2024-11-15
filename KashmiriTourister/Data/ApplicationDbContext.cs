@@ -17,5 +17,9 @@ namespace KashmiriTourister.Data
         public DbSet<CertificateRequest> CertificateRequest { get; set; } 
 
         public DbSet<Certificate> Certificate { get; set; }
+
+        public DbSet<Login> Login { get; set; }
+
+        public DbSet<CertificateCollected> CertificateCollected { get; set; }
     }
 }

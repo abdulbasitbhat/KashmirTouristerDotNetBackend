@@ -46,22 +46,35 @@ namespace KashmiriTourister.Controllers
 
         [HttpPut]
         [Route("update/{id:guid}")]
-        public IActionResult updateRequest(Guid id, UpdateCertificateRequestDTO request )
+        public IActionResult updateRequest(Guid id, UpdateCertificateRequestDTO request)
         {
             var req = dbContext.CertificateRequest.Find(id);
             if (req is null)
             {
                 return NotFound();
             }
-            req.email = request.email;
-            req.landmark = request.landmark;
-            req.image = request.image;
+
+            if (request.email != "")
+            {
+                req.email = request.email;
+            }
+
+            if (request.landmark != "")
+            {
+                req.landmark = request.landmark;
+            }
+
+            if (request.image != "")
+            {
+                req.image = request.image;
+            }
+
             req.hallOfTravellers = request.hallOfTravellers;
-            req.issueStatus = request.issueStatus;
+
+            req.issueStatus = request.issueStatus; // Assuming issueStatus is a boolean and can be updated directly
 
             dbContext.SaveChanges();
             return Ok(req);
-
         }
 
         [HttpPut]
