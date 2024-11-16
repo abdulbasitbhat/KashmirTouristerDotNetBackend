@@ -107,6 +107,7 @@ namespace KashmiriTourister.Controllers
             dbContext.CertificateRequest.Remove(req);
             dbContext.SaveChanges();
             return Ok(req);
+
         }
 
     }
