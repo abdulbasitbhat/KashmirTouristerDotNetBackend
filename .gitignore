@@ -1,0 +1,12 @@
+# Ignore build and compiled files
+bin/
+obj/
+
+# Ignore Visual Studio files
+.vs/
+*.suo
+*.user
+
+# Ignore local configuration files
+appsettings.Development.json
+appsettings.Local.json
