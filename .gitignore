@@ -6,9 +6,10 @@
 # dotenv files
 .env
 
-*bin/
-*obj/
-*.vs/
+KashmiriTourister/bin/
+KashmiriTourister/obj/
+KashmiriTourister/.config/
+.vs/
 
 
 # User-specific files
