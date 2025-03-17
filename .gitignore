@@ -1,5 +1,6 @@
 # Ignore build and compiled files
-bin/
+KashmiriTourister/bin/
+KashmiriTourister/.config/
 obj/
 
 # Ignore Visual Studio files
