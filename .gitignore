@@ -6,7 +6,6 @@
 # dotenv files
 .env
 
-*.bin
 
 # User-specific files
 *.rsuser
